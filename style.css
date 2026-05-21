@@ -850,16 +850,32 @@ ul { list-style: none; }
         letter-spacing: 1px;
     }
     .logo-paramo .logo-title {
-        font-size: 1.2rem;
-        letter-spacing: 5px;
+        font-size: 1.1rem;
+        letter-spacing: 4px;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .logo-paramo .logo-subtitle {
         font-size: 0.45rem;
         letter-spacing: 2px;
+        white-space: nowrap;
     }
 
     .overview-grid {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .overview-item {
+        padding: 30px 20px;
+        width: 100%;
+    }
+    .overview-item .value {
+        font-size: 1.7rem;
+    }
+    .overview-item .sub-value {
+        font-size: 0.95rem;
     }
     .overview-grid::before { display: none; }
     .timeline::before, .timeline-fill { left: 30px; }
