@@ -898,11 +898,22 @@ ul { list-style: none; }
     }
     .scope-image {
         width: 100%;
-        padding: 20px;
+        padding: 0;
+        overflow-x: auto !important;
+        justify-content: flex-start !important;
+        -webkit-overflow-scrolling: touch;
+    }
+    .scope-image::-webkit-scrollbar {
+        height: 6px;
+    }
+    .scope-image::-webkit-scrollbar-thumb {
+        background: var(--accent);
+        border-radius: 10px;
     }
     .scope-image img {
-        width: 100% !important;
+        width: 200% !important;
         height: auto !important;
+        max-width: none !important;
     }
     .investment-total { padding: 40px 30px; }
     .total-value { font-size: 3rem; }
