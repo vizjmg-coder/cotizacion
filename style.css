@@ -676,14 +676,32 @@ ul { list-style: none; }
 
 @media (max-width: 900px) {
     .horizontal-timeline {
-        overflow-x: auto;
-        padding-bottom: 20px;
+        margin: 40px 0;
     }
     .ht-points {
-        min-width: 800px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 0 10%;
+    }
+    .ht-point {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        text-align: left;
+        align-items: center;
+        gap: 20px;
+    }
+    .ht-dot {
+        margin: 0;
+        flex-shrink: 0;
     }
     .ht-line {
-        min-width: 700px;
+        top: 0;
+        bottom: 0;
+        left: calc(10% + 10px);
+        width: 2px;
+        height: 100%;
     }
     .overview-grid, .timeline-item, .timeline-item.reverse, .investment-container, .scope-content {
         flex-direction: column;
