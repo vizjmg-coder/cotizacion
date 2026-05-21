@@ -863,7 +863,7 @@ ul { list-style: none; }
         white-space: nowrap;
     }
 
-    .overview-grid {
+    .overview-grid, .scope-content {
         grid-template-columns: 1fr;
         gap: 30px;
     }
@@ -892,26 +892,16 @@ ul { list-style: none; }
     .timeline-image { width: 100%; min-height: 300px; }
     .timeline-content { padding: 0; }
     
-    .investment-container, .scope-content {
+    .investment-container {
         flex-direction: column;
         gap: 40px;
     }
     .scope-image {
         width: 100%;
         padding: 0;
-        overflow-x: auto !important;
-        justify-content: flex-start !important;
-        -webkit-overflow-scrolling: touch;
-    }
-    .scope-image::-webkit-scrollbar {
-        height: 6px;
-    }
-    .scope-image::-webkit-scrollbar-thumb {
-        background: var(--accent);
-        border-radius: 10px;
     }
     .scope-image img {
-        width: 200% !important;
+        width: 100% !important;
         height: auto !important;
         max-width: none !important;
     }
