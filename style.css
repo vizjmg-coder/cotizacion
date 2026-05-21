@@ -852,7 +852,7 @@ ul { list-style: none; }
     .logo-paramo .logo-title {
         font-size: 1.1rem;
         letter-spacing: 4px;
-        white-space: nowrap;
+        white-space: nowrap !important;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -863,8 +863,13 @@ ul { list-style: none; }
         white-space: nowrap;
     }
 
-    .overview-grid, .scope-content {
+    .overview-grid {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .scope-content {
+        display: flex !important;
+        flex-direction: column !important;
         gap: 30px;
     }
     .overview-item {
